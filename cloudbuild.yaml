@@ -1,5 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t',
-   'gcr.io/$PROJECT_ID/textbook-summary-api', '.']
-  args: ['run', 'gcr.io/$PROJECT_ID/myimage']
+         'gcr.io/$PROJECT_ID/textbook-summary-api',
+         '.']
+images: ['gcr.io/$PROJECT_ID/textbook-summary-api']
